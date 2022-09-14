@@ -1,0 +1,11 @@
+const addPrefix = (arr, prefix) => {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i += 1) {
+    newArr[i] = prefix+' '+arr[i];
+  }
+  return newArr;
+};
+const names = ['john', 'smith', 'karl', 'Vlad'];
+ 
+const newNames = addPrefix(names, 'mr');
+console.log(newNames)
